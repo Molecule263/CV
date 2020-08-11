@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact me</title>
+  </head>
+  <body>
+    <h1>Contact details</h1>
+    <h3>Email address:</h3>
+    <p>fakeemail@gmail.com</p>
+    <h3>Cellphone number:</h3>
+    <p>074 376 5044</p>
+
+    <h3>Join my contact list for annual events</h3>
+    <form action="mailto:fakeemail@gmail.com" method="post" enctype="text/plain">
+      <table>
+        <tr>
+          <td>
+            <label for="firstName">First name:</label>
+          </td>
+          <td><input type="text" name="firstName" /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="lastName">Last name:</label>
+          </td>
+          <td><input type="text" name="lastName" /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="emailAddress">Email address:</label>
+          </td>
+          <td><input type="email" name="emailAddress" /></td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="date">Choose a date</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="date" name="date" id="datePicker">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="file">Upload a file:</label></td>
+          <td><input type="file" name="file" id="fileUploadButton"></td>
+        </tr>
+      </table>
+
+      <label for="notifications"
+        >Would you like to receive weekly notifications from this site?</label
+      >
+      <input type="checkbox" name="notifications" /> <br />
+
+      <input type="submit" />
+    </form>
+  </body>
+</html>
